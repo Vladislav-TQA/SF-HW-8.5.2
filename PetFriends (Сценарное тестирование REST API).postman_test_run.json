@@ -1,0 +1,191 @@
+{
+	"id": "05557610-adf9-49e1-a33e-97752fe57652",
+	"name": "PetFriends (Сценарное тестирование REST API)",
+	"timestamp": "2022-08-15T14:18:16.804Z",
+	"collection_id": "22222997-2eedb94d-1b7e-4b65-bbec-0a16184ff8ea",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "aeb68a43-7ccc-48ec-8ea3-49ae71ada6f8",
+			"name": "Запрос на получение api key",
+			"url": "https://petfriends.skillfactory.ru/api/key",
+			"time": 78,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Проверка ключа": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка ключа": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				78
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Проверка ключа": true
+				}
+			]
+		},
+		{
+			"id": "14699ce2-7370-492e-9387-a4cb174141d8",
+			"name": "Запрос на добавление питомца с переменными  api/create_pet_simple",
+			"url": "https://petfriends.skillfactory.ru/api/create_pet_simple",
+			"time": 91,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				91
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e97622da-5283-4454-9f5f-858a9ffdaa3b",
+			"name": "Проверка того, что питомец добавлен api/pets?filter=my_pets",
+			"url": "https://petfriends.skillfactory.ru/api/pets?filter=my_pets",
+			"time": 403,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Проверка что питомец добавлен": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка что питомец добавлен": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				403
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Проверка что питомец добавлен": true
+				}
+			]
+		},
+		{
+			"id": "04e0fe46-5fdd-4414-b8f0-f7883f9b9d6d",
+			"name": "Удаление питомца api/pets",
+			"url": "https://petfriends.skillfactory.ru/api/pets/cb5aa1e0-9210-4876-a467-f000349dbd9f",
+			"time": 97,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4c0dd32a-c515-4042-9945-cee8af81de5e",
+			"name": "Проверка того, что питомец удалён",
+			"url": "https://petfriends.skillfactory.ru/api/pets?filter=my_pets",
+			"time": 327,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"проверка что карточка удалена": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"проверка что карточка удалена": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				327
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"проверка что карточка удалена": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 996,
+	"collection": {
+		"requests": [
+			{
+				"id": "aeb68a43-7ccc-48ec-8ea3-49ae71ada6f8",
+				"method": "GET"
+			},
+			{
+				"id": "14699ce2-7370-492e-9387-a4cb174141d8",
+				"method": "POST"
+			},
+			{
+				"id": "e97622da-5283-4454-9f5f-858a9ffdaa3b",
+				"method": "GET"
+			},
+			{
+				"id": "04e0fe46-5fdd-4414-b8f0-f7883f9b9d6d",
+				"method": "DELETE"
+			},
+			{
+				"id": "4c0dd32a-c515-4042-9945-cee8af81de5e",
+				"method": "GET"
+			}
+		]
+	}
+}
